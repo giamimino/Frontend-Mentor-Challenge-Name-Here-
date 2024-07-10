@@ -1,0 +1,310 @@
+@import url('https://fonts.google.com/specimen/Inter');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.top-BG {
+    position: absolute;
+    width: 100%;
+    height: 245px;
+    background-color: hsl(225, 100%, 98%);
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-bottom-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+}
+
+body.dark-mode .top-BG {
+    background-color: hsl(232, 19%, 15%);
+}
+
+body {
+    background-color: hsl(0, 0%, 100%);
+    padding: 20px 150px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background-color: hsl(230, 17%, 14%);
+    color: hsl(0, 0%, 100%);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.header-text {
+    margin-right: 50px;
+}
+
+header h1 {
+    font-weight: 700;
+    margin: 0;
+}
+
+header .dark-mode {
+    display: flex;
+    align-items: center;
+}
+
+header span {
+    margin-right: 10px;
+}
+
+header .dark-mode span {
+    color: hsl(0, 0%, 53%);
+    font-weight: 700;
+}
+
+.header-text p {
+    color: hsl(0, 0%, 53%);
+    font-weight: 700;
+    text-align: left;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 44px;
+    height: 20px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    width: 12px;
+    height: 12px;
+    right: 4px;
+    bottom: 4px;
+    background-color: #fff;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+        background: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+}
+
+input:checked + .slider:before {
+    transform: translateX(-14px);
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: hsl(227, 47%, 96%);
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    margin: 0 10px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.card h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.username {
+    font-size: 14px;
+    margin-left: 5px;
+    margin-top: 3.5px;
+}
+
+.followers-quantity {
+    font-weight: 700;
+    font-size: 58px;
+}
+
+.followers {
+    width: 100%;
+    text-align: center;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+}
+
+.count-fllwxsub {
+    font-size: 1rem;
+    letter-spacing: 2px;
+    margin-top: 6px;
+    color: hsl(0, 0%, 53%);
+}
+
+.today {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-up-dawn {
+    margin-right: 5px;
+}
+
+.up {
+    color: hsl(163, 72%, 41%);
+}
+
+.dawn {
+    color: hsl(356, 69%, 56%);
+}
+
+body.dark-mode .card {
+    background-color: hsl(228, 28%, 20%);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.facebook {
+    border-top: 4px solid hsl(208, 92%, 53%);
+}
+
+.twitter {
+    border-top: 4px solid hsl(203, 89%, 53%);
+}
+
+.instagram {
+    border-top: 4px solid;
+    border-image: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%)) 1;
+    border-radius: 8px;
+}
+
+.youtube {
+    border-top: 4px solid hsl(348, 97%, 39%);
+}
+
+.overview {
+    margin-top: 40px;
+}
+
+.overview h2 {
+    margin-bottom: 20px;
+    color: hsl(0, 0%, 53%);
+}
+
+.stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.stat {
+    background-color: hsl(227, 47%, 96%);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    width: 242px;
+    /* height: 112px; */
+    cursor: pointer;
+}
+
+body.dark-mode .stat {
+    background-color: hsl(228, 28%, 20%);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.stat p {
+    margin: 0;
+}
+
+.stat .value {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.stat .percentage {
+    color: hsl(163, 72%, 41%);
+    font-size: 14px;
+    text-align: right;
+}
+
+.stat .percentage.negative {
+    color: hsl(356, 69%, 56%);
+}
+
+.div-for-center {
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    color: hsl(0, 0%, 53%);
+    font-weight: 700;
+    justify-content: space-between;
+}
+
+.div-for-center img {
+    display: flex;
+}
+
+.div-for-center-text {
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin-top: 12px;
+    font-weight: 700;
+    justify-content: space-between;
+}
+
+.value {
+    text-align: left;
+}
+
+.percentage {
+    text-align: right;
+}
+
+.card:hover {
+    background-color: hsl(232, 33%, 91%);
+}
+
+.stat:hover {
+    background-color: hsl(232, 33%, 91%);
+}
+
+body.dark-mode .card:hover {
+    background-color: hsl(228, 26%, 27%);
+}
+
+body.dark-mode .stat:hover {
+    background-color: hsl(228, 26%, 27%);
+}

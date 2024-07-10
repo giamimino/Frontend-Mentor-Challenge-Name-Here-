@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./main.js" defer></script>
+  
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; position: absolute; bottom: 0px; text-align: center;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-text">
+      <h1>Social Media Dashboard</h1>
+      <p>Total Followers: 23,004</p>
+    </div>
+  <div class="dark-mode">
+  <span>Dark Mode</span>
+  <label class="switch">
+    <input type="checkbox" id="darkModeToggle">
+    <span class="slider round"></span>
+</label>
+  </div>
+</header>
+
+<div class="top-BG"></div>
+  
+<div class="cards">   <!--facebook-->
+ <div class="card facebook"> 
+  <h2><span class="icon"><img src="./images/icon-facebook.svg" alt="facebook"></span> <span class="username">@nathanf</span></h2>
+  <p class="followers"><span class="followers-quantity">1987</span> <span class="count-fllwxsub">FOLLOWERS</span></p>
+  <p class="today up"><img class="icon-up-dawn" src="./images/icon-up.svg" alt="up">12 Today</p>
+ </div>
+
+ <div class="card twitter">  <!--twitter-->
+  <h2><span class="icon"><img src="./images/icon-twitter.svg" alt="twitter"></span> <span class="username">@nathanf</span></h2>
+  <p class="followers"><span class="followers-quantity">1044</span> <span class="count-fllwxsub">FOLLOWERS</span></p>
+  <p class="today up"><img class="icon-up-dawn" src="./images/icon-up.svg" alt="up"> 99 Today</p>
+</div>
+
+<div class="card instagram"> <!--intagram-->
+  <h2><span class="icon">
+    <img src="./images/icon-instagram.svg#" alt="instagram"></span> <span class="username">@realnathanf</span></h2>
+  <p class="followers"><span class="followers-quantity">11k</span> <span class="count-fllwxsub">FOLLOWERS</span></p>
+  <p class="today up"><img class="icon-up-dawn" src="./images/icon-up.svg" alt="up"> 1099 Today</p>
+</div>
+
+<div class="card youtube">                 <!--youtube-->
+  <h2><span class="icon"><img class="icon-up-dawn" src="./images/icon-youtube.svg" alt="youtube"></span> <span class="username">Nathan F.</span></h2>
+  <p class="followers"><span class="followers-quantity">8239</span> <span class="count-fllwxsub">SUBSCRIBERS</span></p>
+  <p class="today dawn"><img src="./images/icon-down.svg" alt="">144 Today</p>
+</div>
+</div>
+
+<div class="overview">
+  <h2>Overview - Today</h2>
+  <div class="stats">
+      <div class="stat Facebook">
+          <div class="div-for-center"><p>Page Views</p><img src="./images/icon-facebook.svg" alt=""></div>
+          <div class="div-for-center-text"><p class="value">87 <span class="percentage" style="text-align: right;"><img src="./images/icon-up.svg" alt="">3%</span></p></div>
+      </div>
+
+      <div class="stat Facebook">
+          <div class="div-for-center"><p>Likes</p><img src="./images/icon-facebook.svg" alt=""></div>
+          <div class="div-for-center-text"><p class="value">52 <span class="percentage negative"><img src="./images/icon-down.svg" alt="">2%</span></p></div>
+      </div>
+
+      <div class="stat Instagram">
+          <div class="div-for-center"><p>Likes</p><img src="./images/icon-instagram.svg" alt=""></div>
+          <div class="div-for-center-text"><p class="value">5462 <span class="percentage"><img src="./images/icon-up.svg" alt="">2257%</span></p></div>
+      </div>
+
+      <div class="stat Instagram">
+          <div class="div-for-center"><p>Profile Views</p><img src="./images/icon-instagram.svg" alt=""></div>
+          <div class="div-for-center-text"><p class="value">52k <span class="percentage"><img src="./images/icon-up.svg" alt="">1375%</span></p></div>
+      </div>
+  </div>
+<div class="stats">
+      <div class="stat Twitter">
+          <div class="div-for-center"><p>Retweets</p><img src="./images/icon-twitter.svg" alt=""></div>
+          <div class="div-for-center-text"><p class="value">117 <span class="percentage"><img src="./images/icon-up.svg" alt="">303%</span></p></div>
+      </div>
+      
+      <div class="stat Twitter">
+          <div class="div-for-center"><p>Likes</p><img src="./images/icon-twitter.svg" alt=""></div>
+          <div class="div-for-center-text"><p class="value">507 <span class="percentage"><img src="./images/icon-up.svg" alt="">553%</span></p></div>
+      </div>
+
+      <div class="stat Youtube">
+          <div class="div-for-center"><p>Likes</p><img src="./images/icon-youtube.svg" alt=""></div>
+          <div class="div-for-center-text"><p class="value">107 <span class="percentage negative"><img src="./images/icon-down.svg" alt="">19%</span></p></div>
+      </div>
+
+      <div class="stat Youtube">
+          <div class="div-for-center"><p>Total Views</p><img src="./images/icon-youtube.svg" alt=""></div>
+          <div class="div-for-center-text"><p class="value">1407 <span class="percentage negative"><img src="./images/icon-down.svg" alt="">12%</span></p></div>
+      </div>
+  </div>
+</div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Gia Miminoshvili</a>.
+  </div>
+</body>
+</html>
